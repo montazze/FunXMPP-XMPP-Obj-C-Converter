@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29148E1A15EE49FF009ED1F5 /* decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 29148E1915EE49FF009ED1F5 /* decoder.m */; };
 		2990E37715ECEA6200E6ADA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990E37615ECEA6200E6ADA9 /* Foundation.framework */; };
 		2990E37A15ECEA6200E6ADA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990E37915ECEA6200E6ADA9 /* main.m */; };
 		2990E37E15ECEA6200E6ADA9 /* funxmpp.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2990E37D15ECEA6200E6ADA9 /* funxmpp.1 */; };
@@ -26,11 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29148E1815EE49FF009ED1F5 /* decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoder.h; sourceTree = "<group>"; };
+		29148E1915EE49FF009ED1F5 /* decoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = decoder.m; sourceTree = "<group>"; };
+		29148E1C15EE4A60009ED1F5 /* funxmpp_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = funxmpp_types.h; sourceTree = "<group>"; };
 		2990E37215ECEA6200E6ADA9 /* funxmpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = funxmpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		2990E37615ECEA6200E6ADA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2990E37915ECEA6200E6ADA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2990E37C15ECEA6200E6ADA9 /* funxmpp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "funxmpp-Prefix.pch"; sourceTree = "<group>"; };
 		2990E37D15ECEA6200E6ADA9 /* funxmpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = funxmpp.1; sourceTree = "<group>"; };
+		2990E38415ECEE5D00E6ADA9 /* funxmpp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = funxmpp.py; path = ../../whatspoke/api/funxmpp.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29148E2115EE86E5009ED1F5 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				29148E1815EE49FF009ED1F5 /* decoder.h */,
+				29148E1915EE49FF009ED1F5 /* decoder.m */,
+			);
+			name = Decoder;
+			sourceTree = "<group>";
+		};
 		2990E36715ECEA6200E6ADA9 = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				2990E37915ECEA6200E6ADA9 /* main.m */,
+				29148E1C15EE4A60009ED1F5 /* funxmpp_types.h */,
 				2990E37D15ECEA6200E6ADA9 /* funxmpp.1 */,
 				2990E37B15ECEA6200E6ADA9 /* Supporting Files */,
+				29148E2115EE86E5009ED1F5 /* Decoder */,
 			);
 			path = funxmpp;
 			sourceTree = "<group>";
@@ -83,6 +99,7 @@
 		2990E37B15ECEA6200E6ADA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2990E38415ECEE5D00E6ADA9 /* funxmpp.py */,
 				2990E37C15ECEA6200E6ADA9 /* funxmpp-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -140,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2990E37A15ECEA6200E6ADA9 /* main.m in Sources */,
+				29148E1A15EE49FF009ED1F5 /* decoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +250,7 @@
 				2990E38315ECEA6200E6ADA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
